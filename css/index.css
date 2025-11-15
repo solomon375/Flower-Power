@@ -1,40 +1,51 @@
-nav{
+nav {
     border: solid black 1px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height:75px;
+    height: 75px;
     opacity: 1;
-    background-color: #7ba428;
+    background-color: #b8d9f8;
     font-style: italic;
+    font-weight: bold;
     font-size: 32px;
     text-align: start;
-    /* fix about us to the left */
-    /* maybe flexbox to adjust individuals better */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 }
-nav img{
+
+nav img {
     height: 60px;
     width: 60px;
     vertical-align: middle;
     margin-left: 10px;
-    /* fix underline in the background */
 }
-nav #flowerpedia-nav,#about-us-nav{
+
+nav #flowerpedia-nav,
+#about-us-nav {
     color: brown;
     margin: 20px;
-    border: solid #9acd32 2px;
+    border: solid #dcecfc 2px;
     padding: 5px;
     vertical-align: middle;
 }
-nav #flowerpedia-nav:hover,#about-us-nav:hover{
-    background-color: #9acd32;
+
+nav #about-us-nav {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+nav #flowerpedia-nav:hover,
+#about-us-nav:hover {
+    background-color: #dcecfc;
+    font-size: 36px;
     /* maybe add animation on hover */
 }
-nav #flowerpedia-nav:visited,#about-us-nav:visited{
-    color: darkred;
-}
-.sidebar{
+
+.sidebar {
     border: solid black 1px;
     position: fixed;
     top: 76px;
@@ -42,31 +53,80 @@ nav #flowerpedia-nav:visited,#about-us-nav:visited{
     width: 250px;
     height: 100%;
     opacity: 1;
-    background-color: #7ba428;
-}
-.sidebar summary{
+    background-color: #b8d9f8;
     font-style: italic;
-    margin-top: 10px;
-    font-size: 28px;
-    text-align: center;
     color: brown;
-    /* fix color */
-}
-.sidebar summary:hover{
-    background-color: #9acd32;
-    /* maybe add animation on hover */
-}
-.sidebar summary:visited{
-    color: darkred;
-}
-body{
-    background-color: #9acd32;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
 }
 
-/* need to fix the ul/li in the sidebar */
-/* need to add content to main */
-/* need to add the other pages and sync them with the main page */
-/* upper view in all the pages or just the flowerpedia page? */
-/* need to fix the bugs in the css */
-/* css one for all or just individual css for each page? */
-/* maybe build structure for the general page and then individualize each page with its own css */
+.sidebar a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.sidebar summary {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 28px;
+    margin-left: 30px;
+}
+
+.sidebar summary:hover {
+    background-color: #dcecfc;
+    font-size: 34px;
+    /* maybe add animation on hover */
+}
+
+.home-sidebar {
+    background-color: #dcecfc;
+    font-size: 34px;
+}
+
+.sidebar ul {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 40px;
+
+}
+.home-list:hover {
+    background-color: #dcecfc;
+    font-size: 24px;
+    /* maybe add animation on hover */
+}
+
+footer {
+    border: solid black 1px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    opacity: 1;
+    background-color: #b8d9f8;
+    font-style: italic;
+    font-size: 24px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: brown;
+}
+
+footer a {
+    color: inherit;
+}
+
+footer a:hover {
+    background-color: #dcecfc;
+    font-size: 28px;
+    /* maybe add animation on hover */
+}
+
+body {
+    background-color: #cae2fa;
+}
