@@ -1,3 +1,7 @@
+html {
+    scroll-padding-top: 100px;
+}
+
 nav {
     border: solid black 1px;
     position: fixed;
@@ -97,7 +101,6 @@ nav #flowerpedia-nav:hover,
 
 footer {
     border: solid black 1px;
-    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
