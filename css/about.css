@@ -73,19 +73,6 @@ nav #flowerpedia-nav:hover,
     text-decoration: none;
 }
 
-.sidebar summary {
-    font-weight: bold;
-    margin-top: 10px;
-    font-size: 28px;
-    margin-left: 30px;
-}
-
-.sidebar summary:hover {
-    background-color: #dcecfc;
-    font-size: 34px;
-    /* maybe add animation on hover */
-}
-
 .sidebar ul {
     font-size: 24px;
     margin-top: 10px;
@@ -117,11 +104,12 @@ footer {
     gap: 20px;
     color: brown;
     margin-left: 275px;
-   max-width:1100px; 
+    max-width: 1100px;
 }
 
 footer a {
     color: inherit;
+    font-style: italic;
 }
 
 footer a:hover {
@@ -132,95 +120,133 @@ footer a:hover {
 
 body {
     background-color: #cae2fa;
-    margin:0;
-    color:#222;
-    line-height:1.5;
-    -webkit-font-smoothing:antialiased;
+    margin: 0;
+    color: #222;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
 }
 
-.layout{
-  display:flex;
-  gap:22px;
-  margin-top:100px;
+.layout {
+    display: flex;
+    gap: 22px;
+    margin-top: 100px;
+    font-style: italic;
 }
 
-.main-content{
-    flex:1;
-    max-width:1100px;
-    margin:22px;
+.main-content {
+    flex: 1;
+    max-width: 1100px;
+    margin: 22px;
     margin-left: 250px;
-    padding:0 18px 40px;
+    padding: 0 18px 40px;
+    font-style: italic;
 }
 
-.content{
-    flex:1;
-    display:flex;
-    flex-direction:column;
-    gap:18px;
-    max-width:1100px;
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 1100px;
+    font-style: italic;
 }
 
-.hero{
-  background:linear-gradient(135deg, #87b7f6, #ffffff);
-  border: radius 12px;;
-  padding:34px;
+.hero {
+    background: linear-gradient(135deg, #87b7f6, #ffffff);
+    border: radius 12px;
+    font-style: italic;
+    padding: 34px;
 }
 
-.hero-inner h1{
-    margin:0;
-    font-size:1.8rem;
+.hero-inner h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-style: italic;
 }
 
-.tagline{
-    margin-top:8px;
-    color:#6b7280;
+.tagline {
+    margin-top: 8px;
+    color: #6b7280;
+    font-style: italic;
 }
 
-.card{
-  background:#b2e7fc;
-  padding:18px;
-  border-radius:12px;
-}
-.cards.values .value-list{
-  display:flex;
-  gap:12px;
-  flex-wrap:wrap;
-}
-.value-card{
-  flex:1;
-  min-width:160px;
-  padding:12px;
-  border-radius:10px;
-  background:linear-gradient(180deg,#fff,#87b7f6);
-  text-align:center;
-}
-.value-card .icon{
-    font-size:28px;
-    margin-bottom:8px
+.card {
+    background: #b2e7fc;
+    padding: 18px;
+    border-radius: 12px;
+    font-style: italic;
 }
 
-.team-list{
-    display:flex;
-    gap:14px;
-    flex-wrap:wrap
-}
-.person{
-  background:linear-gradient(180deg,#fff,#87b7f6);
-  padding:12px;border-radius:10px;flex:1;min-width:150px;text-align:center;
-}
-.avatar{
-  width:64px;height:64px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;
-  background-color:#6aa84f;
-  color:white;
-  font-weight:700;
-  margin-bottom:8px;
-  font-size:1.05rem;
-  box-shadow:0 6px 14px rgba(106,168,79,0.14);
+.cards.values .value-list {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    font-style: italic;
 }
 
-@media (max-width:880px){
-  .layout{flex-direction:column;padding:0 14px 30px}
-  .sidebar{width:100%;order:2}
-  .content{order:1}
-  .team-list{justify-content:space-between}
+.value-card {
+    flex: 1;
+    min-width: 160px;
+    padding: 12px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #fff, #87b7f6);
+    text-align: center;
+    font-style: italic;
+}
+
+.value-card .icon {
+    font-size: 28px;
+    margin-bottom: 8px
+}
+
+.team-list {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap
+}
+
+.person {
+    background: linear-gradient(180deg, #fff, #87b7f6);
+    padding: 12px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 150px;
+    text-align: center;
+    font-style: italic;
+}
+
+.avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #6aa84f;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-size: 1.05rem;
+    box-shadow: 0 6px 14px rgba(106, 168, 79, 0.14);
+    font-style: italic;
+}
+
+@media (max-width:880px) {
+    .layout {
+        flex-direction: column;
+        padding: 0 14px 30px
+    }
+
+    .sidebar {
+        width: 100%;
+        order: 2
+    }
+
+    .content {
+        order: 1
+    }
+
+    .team-list {
+        justify-content: space-between
+    }
 }
