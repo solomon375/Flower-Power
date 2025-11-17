@@ -71,29 +71,23 @@ nav #flowerpedia-nav:hover,
     align-items: start;
 }
 
+#back-flowerpedia {
+    font-weight: bold;
+}
+
 .sidebar a {
     color: inherit;
     text-decoration: none;
 }
 
-.sidebar summary {
-    font-weight: bold;
-    margin-top: 10px;
-    font-size: 24px;
-    margin-left: 15px;
-}
-
-.sidebar summary:hover {
-    background-color: #dcecfc;
-    font-size: 27px;
-    /* maybe add animation on hover */
-}
-
 .sidebar ul {
-    font-size: 24px;
+    font-size: 22px;
     margin-top: 10px;
     margin-left: 40px;
+}
 
+.sidebar li {
+    margin: 15px 0px;
 }
 
 .sidebar li:hover {
@@ -139,6 +133,7 @@ body {
     margin-left: 250px;
     padding: 20px;
     margin-top: 50px;
+    text-align: left;
 }
 
 .content h1 {
@@ -148,10 +143,17 @@ body {
     font-style: italic;
 }
 
+.content img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 .content h3 {
     font-size: 32px;
     margin: 20px;
     font-style: italic;
+    text-decoration: underline;
 }
 
 .content p {
@@ -160,41 +162,8 @@ body {
     font-style: italic;
 }
 
-.content ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    padding: 0;
-    font-style: italic;
-}
-
 .content li {
-    text-align: center;
-    margin: 0;
+    font-size: 24px;
+    margin: 20px;
     font-style: italic;
-}
-
-.content img {
-    width: 150px;
-    height: auto;
-    display: block;
-    margin-bottom: 10px;
-}
-
-.content li a{
-    font-size: 18px;
-    margin: 0;
-    color: brown;
-    font-style: italic;
-    text-decoration: none;
-    font-weight: bold;
-    font-style: italic;
-}
-.content li:hover{
-    background-color: #b8d9f8;
-    font-size: 20px;
-    text-decoration: underline;
-    color: brown;
-    /* maybe add animation on hover */
 }
