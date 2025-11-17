@@ -114,6 +114,7 @@ footer {
     align-items: center;
     gap: 20px;
     color: brown;
+    margin-top: 5rem;
 }
 
 footer a {
@@ -135,6 +136,9 @@ body {
     justify-content: center; 
     flex-direction: column;
     margin-top: 75px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main-content h1{
