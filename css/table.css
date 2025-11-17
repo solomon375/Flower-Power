@@ -102,12 +102,19 @@ tbody tr:nth-child(even) {
 
     table {
         min-width: 0;
-        font-size: 0.9rem
+        font-size: 0.9rem;
+    }
+    .card{
+        overflow-x: auto;  
     }
 
-    thead th:nth-child(n+4), tbody td:nth-child(n+4) {
-        display: none;
+nav #about-us-nav {
+        font-size: 1.5rem;
+        padding: 0.25rem;
+        margin-right: 0.625rem;
     }
-
-    /* hide less important cols on very small */
+    nav #flowerpedia-nav:hover,
+        #about-us-nav:hover {
+        font-size: 1.74rem;
+    }
 }

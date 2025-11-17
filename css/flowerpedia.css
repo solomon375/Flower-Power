@@ -136,7 +136,6 @@ body {
     flex-direction: column;
     margin-left: 15.625rem;
     padding: 1.25rem;
-    margin-top: 3.125rem;
 }
 
 .content h1 {
@@ -164,6 +163,7 @@ body {
     gap: 2.5rem;
     padding: 0;
     font-style: italic;
+    overflow-x: auto;
 }
 
 .content li {
@@ -194,4 +194,85 @@ body {
     text-decoration: underline;
     color: brown;
     /* maybe add animation on hover */
+}
+#top{
+    padding: 40px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        font-size: 1.5rem;
+        height: 3.75rem;
+    }
+
+    nav img {
+        height: 3rem;
+        width: 3rem;
+        margin-left: 0.3125rem;
+    }
+
+    nav #flowerpedia-nav,
+    #about-us-nav {
+        margin: 0.625rem;
+        padding: 0.1875rem;
+    }
+
+    nav #flowerpedia-nav {
+        font-size: 1.75rem;
+    }
+
+    .sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        overflow-x: auto;
+    }
+
+    .sidebar summary,
+    .sidebar ul {
+        font-size: 1.25rem;
+        margin: 0.3125rem;
+    }
+
+    body {
+        margin-left: 0;
+        margin-top: 0;
+        padding: 0.625rem;
+    }
+
+    .content h1 {
+        font-size: 2rem;
+    }
+
+    .content h3 {
+        font-size: 1.5rem;
+    }
+
+    .content p {
+        font-size: 1.125rem;
+    }
+
+    .content ul {
+        gap: 1.25rem;
+    }
+
+    .content img {
+        width: 7.5rem;
+    }
+
+    .content li a {
+        font-size: 1rem;
+    }
+nav #about-us-nav {
+        font-size: 1.5rem;
+        padding: 0.25rem;
+        margin-right: 0.625rem;
+    }
+    nav #flowerpedia-nav:hover,
+        #about-us-nav:hover {
+        background-color: #dcecfc;
+        font-size: 1.74rem;
+        /* maybe add animation on hover */
+    }    
 }

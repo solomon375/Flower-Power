@@ -83,7 +83,6 @@ body {
     display: flex;
     justify-content: center; 
     flex-direction: column;
-    margin-top: 4.6875rem;
     max-width: 62.5rem;
     margin-left: auto;
     margin-right: auto;
@@ -147,6 +146,7 @@ body {
     justify-content: center;
     gap: 2.5rem;
     padding: 0;
+    overflow-x: auto;
 }
 
 .top-picks li {
@@ -175,4 +175,7 @@ body {
     text-decoration: underline;
     color: brown;
     /* maybe add animation on hover */
+}
+#top{
+    padding: 40px;
 }

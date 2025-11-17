@@ -160,3 +160,24 @@ body {
     margin: 1.25rem;
     font-style: italic;
 }
+@media (max-width:768px) {
+    .sidebar {
+        display: none;
+    }
+    body {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1.25rem;
+    }
+    nav #about-us-nav {
+        font-size: 1.5rem;
+        padding: 0.25rem;
+        margin-right: 0.625rem;
+    }
+    nav #flowerpedia-nav:hover,
+        #about-us-nav:hover {
+        background-color: #dcecfc;
+        font-size: 1.74rem;
+        /* maybe add animation on hover */
+    }
+}
