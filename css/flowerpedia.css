@@ -255,6 +255,7 @@ body {
 
     .content ul {
         gap: 1.25rem;
+        justify-content: flex-start;
     }
 
     .content img {
@@ -276,3 +277,4 @@ nav #about-us-nav {
         /* maybe add animation on hover */
     }    
 }
+

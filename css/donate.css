@@ -88,30 +88,6 @@ body {
     margin-right: auto;
 }
 
-.main-content h1{
-    color:brown;
-    font-size: 3.25rem;
-    text-align: center;
-    text-decoration:underline;
-    font-style: italic;
-}
-
-
-.main-image{
-    width: 50%;
-    height: auto;
-    display: block;
-    margin-bottom: 0.625rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-.main-content h2{
-    font-size: 2rem;
-    text-decoration: underline;
-    text-align: center;
-    font-style: italic;
-}
-
 .main-content p {
     font-size: 1.5rem;
     font-style: italic;
@@ -120,88 +96,14 @@ body {
     margin-bottom: 3.125rem;
 }
 
-.top-picks{
-    overflow-x: auto;
-}
-
-.top-picks h3 {
-    font-size: 1.75rem;
-    text-decoration: underline;
-    margin: 1.25rem;
-    font-style: italic;
-}
-
-.top-picks p {
-    font-size: 1.25rem;
-    margin: 1.25rem;
-    font-style: italic;
-}
-
-.top-picks a {
-    font-size: 1.125rem;
-    margin: 1.25rem;
-    font-style: italic;
-    font-weight: bold;
-}
-
-.top-picks ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 2.5rem;
-    padding: 0;
-    padding-inline-start: 80px;
-}
-
-.top-picks li {
-    text-align: center;
-    margin: 0;
-}
-
-.top-picks img {
-    width: 9.375rem;
-    height: auto;
-    display: block;
-    margin-bottom: 0.625rem;
-}
-
-.top-picks li a{
-    font-size: 1.125rem;
-    margin: 0;
-    color: brown;
-    font-style: italic;
-    text-decoration: none;
-    font-weight: bold;
-}
-.top-picks li:hover,a:hover{
-    background-color: #b8d9f8;
-    font-size: 1.25rem;
-    text-decoration: underline;
-    color: brown;
-    /* maybe add animation on hover */
-}
 #top{
     padding: 40px;
 }
 
 @media only screen and (min-width: 600px) { 
-    .top-picks ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 2.5rem;
-    padding: 0;
-    padding-inline-start: 120px;
-}
+
 }
 
 @media only screen and (max-width: 600px) {
-    .top-picks ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 2.5rem;
-    padding: 0;
-    padding-inline-start: 350px;
-}
+
 }
