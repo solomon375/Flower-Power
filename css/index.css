@@ -1,15 +1,15 @@
 nav {
-    border: solid black 1px;
+    border: solid black 0.0625rem;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 75px;
+    height: 4.6875rem;
     opacity: 1;
     background-color: #b8d9f8;
     font-style: italic;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 2rem;
     text-align: start;
     display: flex;
     flex-direction: row;
@@ -18,102 +18,51 @@ nav {
 }
 
 nav img {
-    height: 60px;
-    width: 60px;
+    height: 3.75rem;
+    width: 3.75rem;
     vertical-align: middle;
-    margin-left: 10px;
+    margin-left: 0.625rem;
 }
 
 nav #flowerpedia-nav,
 #about-us-nav {
     color: brown;
-    margin: 20px;
-    border: solid #dcecfc 2px;
-    padding: 5px;
+    margin: 1.25rem;
+    border: solid #dcecfc 0.125rem;
+    padding: 0.3125rem;
     vertical-align: middle;
 }
 
 nav #about-us-nav {
     margin-left: auto;
-    margin-right: 20px;
+    margin-right: 1.25rem;
 }
 
 nav #flowerpedia-nav:hover,
 #about-us-nav:hover {
     background-color: #dcecfc;
-    font-size: 36px;
-    /* maybe add animation on hover */
-}
-
-.sidebar {
-    border: solid black 1px;
-    position: fixed;
-    top: 76px;
-    left: 0;
-    width: 250px;
-    height: 100%;
-    opacity: 1;
-    background-color: #b8d9f8;
-    font-style: italic;
-    color: brown;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: start;
-}
-
-.sidebar a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.sidebar summary {
-    font-weight: bold;
-    margin-top: 10px;
-    font-size: 28px;
-    margin-left: 30px;
-}
-
-.sidebar summary:hover {
-    background-color: #dcecfc;
-    font-size: 34px;
-    /* maybe add animation on hover */
-}
-
-.home-sidebar {
-    background-color: #dcecfc;
-    font-size: 34px;
-}
-
-.sidebar ul {
-    font-size: 20px;
-    margin-top: 10px;
-    margin-left: 40px;
-
-}
-.home-list:hover {
-    background-color: #dcecfc;
-    font-size: 24px;
+    font-size: 2.25rem;
     /* maybe add animation on hover */
 }
 
 footer {
-    border: solid black 1px;
-    bottom: 0;
-    left: 0;
+    border: solid black 0.0625rem;
+    bottom: 0rem;
+    left: 0rem;
     width: 100%;
-    height: 50px;
+    height: 3.125rem;
     opacity: 1;
     background-color: #b8d9f8;
     font-style: italic;
-    font-size: 24px;
+    font-size: 1.5rem;
     text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 1.25rem;
     color: brown;
+
 }
 
 footer a {
@@ -122,7 +71,7 @@ footer a {
 
 footer a:hover {
     background-color: #dcecfc;
-    font-size: 28px;
+    font-size: 1.75rem;
     /* maybe add animation on hover */
 }
 
@@ -134,12 +83,12 @@ body {
     display: flex;
     justify-content: center; 
     flex-direction: column;
-    margin-top: 75px;
+    margin-top: 4.6875rem;
 }
 
 .main-content h1{
     color:brown;
-    font-size: 52px;
+    font-size: 3.25rem;
     text-align: center;
     text-decoration:underline;
     font-style: italic;
@@ -150,41 +99,41 @@ body {
     width: 50%;
     height: auto;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     margin-left: auto;
     margin-right: auto;
 }
 .main-content h2{
-    font-size: 32px;
+    font-size: 2rem;
     text-decoration: underline;
     text-align: center;
     font-style: italic;
 }
 
 .main-content p {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-style: italic;
     display: flex;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
 }
 
 .top-picks h3 {
-    font-size: 28px;
+    font-size: 1.75rem;
     text-decoration: underline;
-    margin: 20px;
+    margin: 1.25rem;
     font-style: italic;
 }
 
 .top-picks p {
-    font-size: 20px;
-    margin: 20px;
+    font-size: 1.25rem;
+    margin: 1.25rem;
     font-style: italic;
 }
 
 .top-picks a {
-    font-size: 18px;
-    margin: 20px;
+    font-size: 1.125rem;
+    margin: 1.25rem;
     font-style: italic;
     font-weight: bold;
 }
@@ -193,7 +142,7 @@ body {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 2.5rem;
     padding: 0;
 }
 
@@ -203,14 +152,14 @@ body {
 }
 
 .top-picks img {
-    width: 150px;
+    width: 9.375rem;
     height: auto;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 .top-picks li a{
-    font-size: 18px;
+    font-size: 1.125rem;
     margin: 0;
     color: brown;
     font-style: italic;
@@ -219,7 +168,7 @@ body {
 }
 .top-picks li:hover,a:hover{
     background-color: #b8d9f8;
-    font-size: 20px;
+    font-size: 1.25rem;
     text-decoration: underline;
     color: brown;
     /* maybe add animation on hover */

@@ -1,19 +1,19 @@
 html {
-    scroll-padding-top: 100px;
+    scroll-padding-top: 6.25rem;
 }
 
 nav {
-    border: solid black 1px;
+    border: solid black 0.0625rem;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 75px;
+    height: 4.6875rem;
     opacity: 1;
     background-color: #b8d9f8;
     font-style: italic;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 2rem;
     text-align: start;
     display: flex;
     flex-direction: row;
@@ -22,41 +22,41 @@ nav {
 }
 
 nav img {
-    height: 60px;
-    width: 60px;
+    height: 3.75rem;
+    width: 3.75rem;
     vertical-align: middle;
-    margin-left: 10px;
+    margin-left: 0.625rem;
 }
 
 nav #flowerpedia-nav,
 #about-us-nav {
     color: brown;
-    margin: 20px;
-    border: solid #dcecfc 2px;
-    padding: 5px;
+    margin: 1.25rem;
+    border: solid #dcecfc 0.125rem;
+    padding: 0.3125rem;
     vertical-align: middle;
 }
 
 nav #about-us-nav {
     margin-left: auto;
-    margin-right: 20px;
+    margin-right: 1.25rem;
     background-color: #dcecfc;
-    font-size: 36px;
+    font-size: 2.25rem;
 }
 
 nav #flowerpedia-nav:hover,
 #about-us-nav:hover {
     background-color: #dcecfc;
-    font-size: 36px;
+    font-size: 2.25rem;
     /* maybe add animation on hover */
 }
 
 .sidebar {
-    border: solid black 1px;
+    border: solid black 0.0625rem;
     position: fixed;
-    top: 76px;
+    top: 4.75rem;
     left: 0;
-    width: 250px;
+    width: 15.625rem;
     height: 100%;
     opacity: 1;
     background-color: #b8d9f8;
@@ -74,37 +74,34 @@ nav #flowerpedia-nav:hover,
 }
 
 .sidebar ul {
-    font-size: 24px;
-    margin-top: 10px;
-    margin-left: 40px;
-
+    font-size: 1.5rem;
+    margin-top: 0.625rem;
+    margin-left: 2.5rem;
 }
 
 .sidebar li:hover {
     background-color: #dcecfc;
-    font-size: 30px;
+    font-size: 1.875rem;
     /* maybe add animation on hover */
 }
 
 footer {
-    border: solid black 1px;
-    bottom: 0;
-    left: 0;
+    border: solid black 0.0625rem;
+    bottom: 0rem;
+    left: 0rem;
     width: 100%;
-    height: 50px;
+    height: 3.125rem;
     opacity: 1;
     background-color: #b8d9f8;
     font-style: italic;
-    font-size: 24px;
+    font-size: 1.5rem;
     text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 1.25rem;
     color: brown;
-    margin-left: 275px;
-    max-width: 1100px;
 }
 
 footer a {
@@ -114,31 +111,30 @@ footer a {
 
 footer a:hover {
     background-color: #dcecfc;
-    font-size: 28px;
+    font-size: 1.75rem;
     /* maybe add animation on hover */
 }
 
 body {
     background-color: #cae2fa;
     margin: 0;
-    color: #222;
+    color: black;
     line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
 }
 
 .layout {
     display: flex;
-    gap: 22px;
-    margin-top: 100px;
+    gap: 1.375rem;
+    margin-top: 6.25rem;
     font-style: italic;
 }
 
 .main-content {
     flex: 1;
-    max-width: 1100px;
-    margin: 22px;
-    margin-left: 250px;
-    padding: 0 18px 40px;
+    max-width: 68.75rem;
+    margin: 1.375rem;
+    margin-left: 15.625rem;
+    padding: 0 1.125rem 2.5rem;
     font-style: italic;
 }
 
@@ -146,16 +142,16 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 18px;
-    max-width: 1100px;
+    gap: 1.1125rem;
+    max-width: 68.75rem;
     font-style: italic;
 }
 
 .hero {
     background: linear-gradient(135deg, #87b7f6, #ffffff);
-    border: radius 12px;
+    border: radius 0.75rem;
     font-style: italic;
-    padding: 34px;
+    padding: 2.125rem;
 }
 
 .hero-inner h1 {
@@ -165,59 +161,59 @@ body {
 }
 
 .tagline {
-    margin-top: 8px;
+    margin-top: 0.5rem;
     color: #6b7280;
     font-style: italic;
 }
 
 .card {
     background: #b2e7fc;
-    padding: 18px;
-    border-radius: 12px;
+    padding: 1.125rem;
+    border-radius: 0.75rem;
     font-style: italic;
 }
 
 .cards.values .value-list {
     display: flex;
-    gap: 12px;
+    gap: 0.75rem;
     flex-wrap: wrap;
     font-style: italic;
 }
 
 .value-card {
     flex: 1;
-    min-width: 160px;
-    padding: 12px;
-    border-radius: 10px;
+    min-width: 16rem;
+    padding: 0.75rem;
+    border-radius: 0.625rem;
     background: linear-gradient(180deg, #fff, #87b7f6);
     text-align: center;
     font-style: italic;
 }
 
 .value-card .icon {
-    font-size: 28px;
-    margin-bottom: 8px
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
 }
 
 .team-list {
     display: flex;
-    gap: 14px;
+    gap: 0.875rem;
     flex-wrap: wrap
 }
 
 .person {
     background: linear-gradient(180deg, #fff, #87b7f6);
-    padding: 12px;
-    border-radius: 10px;
+    padding: 0.75rem;
+    border-radius: 0.625rem;
     flex: 1;
-    min-width: 150px;
+    min-width: 9.375rem;
     text-align: center;
     font-style: italic;
 }
 
 .avatar {
-    width: 64px;
-    height: 64px;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
     display: inline-flex;
     align-items: center;
@@ -225,16 +221,16 @@ body {
     background-color: #6aa84f;
     color: white;
     font-weight: 700;
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
     font-size: 1.05rem;
-    box-shadow: 0 6px 14px rgba(106, 168, 79, 0.14);
+    box-shadow: 0 0.375rem 0.875rem rgba(106, 168, 79, 0.14);
     font-style: italic;
 }
 
-@media (max-width:880px) {
+@media (max-width:55rem) {
     .layout {
         flex-direction: column;
-        padding: 0 14px 30px
+        padding: 0 0.875rem 1.875rem
     }
 
     .sidebar {
