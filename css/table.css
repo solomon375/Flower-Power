@@ -1,0 +1,113 @@
+:root {
+    --bg: #f6f9fc;
+    --card: #ffffff;
+    --accent: #2b6cb0;
+    --muted: #6b7280;
+    --yes: #16a34a;
+    --no: #dc2626;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    margin-bottom: 16px;
+}
+
+h1 {
+    margin: 0 0 8px 0;
+    font-size: 1.5rem;
+    color: var(--accent);
+}
+
+p.lead {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+.card {
+    background: var(--card);
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04), 0 4px 12px rgba(2, 6, 23, 0.06);
+    margin-top: 16px;
+    overflow: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 700px;
+}
+
+caption {
+    text-align: left;
+    font-weight: 600;
+    padding-bottom: 8px;
+    color: var(--accent);
+}
+
+thead th {
+    text-align: left;
+    padding: 12px 12px;
+    font-size: 0.85rem;
+    color: var(--muted);
+    border-bottom: 1px solid #e6eef8;
+    top: 0;
+    background: var(--card);
+    z-index: 1;
+}
+
+tbody td {
+    padding: 12px;
+    border-bottom: 1px dashed #eef3fa;
+    font-size: 0.95rem;
+}
+
+tbody tr:nth-child(even) {
+    background: rgba(11, 77, 139, 0.02);
+}
+
+.thumb {
+    width: auto;
+    height: 60px;
+}
+
+.pill {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    color: #fff;
+}
+
+.yes {
+    background: var(--yes);
+}
+
+.no {
+    background: var(--no);
+}
+
+#top{
+    padding: 40px;
+}
+@media (max-width: 760px) {
+    body {
+        padding: 16px
+    }
+
+    table {
+        min-width: 0;
+        font-size: 0.9rem
+    }
+
+    thead th:nth-child(n+4), tbody td:nth-child(n+4) {
+        display: none;
+    }
+
+    /* hide less important cols on very small */
+}
