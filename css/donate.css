@@ -15,6 +15,7 @@ nav {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    z-index: 1000;
 }
 
 nav img {
@@ -72,7 +73,6 @@ footer a {
 footer a:hover {
     background-color: #dcecfc;
     font-size: 1.75rem;
-    /* maybe add animation on hover */
 }
 
 body {
@@ -81,11 +81,12 @@ body {
 
 #mid-page {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     flex-direction: column;
     max-width: 62.5rem;
     margin-left: auto;
     margin-right: auto;
+    align-items: center;
 }
 
 .main-content p {
@@ -96,14 +97,215 @@ body {
     margin-bottom: 3.125rem;
 }
 
-#top{
+#top {
     padding: 40px;
 }
 
-@media only screen and (min-width: 600px) { 
-
+.donation-container {
+    background: white;
+    border-radius: 20px;
+    max-width: 500px;
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
 }
 
-@media only screen and (max-width: 600px) {
+.donation-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
 
+.donation-header h1 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.donation-header p {
+    color: #666;
+    font-size: 1em;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 600;
+    font-size: 0.95em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+    font-family: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.amount-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.amount-option {
+    position: relative;
+}
+
+.amount-option input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.amount-option label {
+    display: block;
+    padding: 15px;
+    text-align: center;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    background: white;
+    margin-bottom: 0;
+}
+
+.amount-option input[type="radio"]:checked+label {
+    background: #b8d9f8;
+    color: white;
+    border-color: #b8d9f8;
+    transform: scale(1.05);
+}
+
+.amount-option label:hover {
+    border-color: #667eea;
+}
+
+.custom-amount {
+    position: relative;
+    padding-right: 20px;
+}
+
+.custom-amount input {
+    padding-left: 35px;
+}
+
+.currency-symbol {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+    font-weight: 600;
+}
+
+.payment-methods {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.payment-method {
+    position: relative;
+    flex: 1;
+    min-width: 120px;
+}
+
+.payment-method input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.payment-method label {
+    display: block;
+    padding: 12px;
+    text-align: center;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    background: white;
+    margin-bottom: 0;
+}
+
+.payment-method input[type="radio"]:checked+label {
+    background: #b8d9f8;
+    color: white;
+    border-color: #b8d9f8;
+}
+
+.payment-method label:hover {
+    border-color: #b8d9f8;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #b8d9f8;
+}
+
+.checkbox-group label {
+    margin-bottom: 0;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(130deg, #667eea, #87b7f6);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .donation-container {
+        padding: 30px 50px;
+        padding-left: 20px;
+    }
+
+    .amount-options {
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 20px;
+    }
+
+    .payment-methods {
+        flex-direction: column;
+        padding-left: 30px;
+    }
+
+    .payment-method {
+        min-width: 100%;
+    }
 }
