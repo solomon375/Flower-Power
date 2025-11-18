@@ -118,3 +118,7 @@ nav #about-us-nav {
         font-size: 1.74rem;
     }
 }
+
+a{
+    color: inherit;
+}
